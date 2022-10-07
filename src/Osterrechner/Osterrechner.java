@@ -19,7 +19,8 @@ public class Osterrechner {
         if (P > 0) {
             System.out.println("Ostern ist am " + P + ". April" );
         } else {
-            System.out.println("Ostern ist am " + P + 31 + ". März" );
+            int D = P + 31;
+            System.out.println("Ostern ist am " + D + ". März" );
         }
 
     }
