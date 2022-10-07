@@ -25,12 +25,13 @@ public class SummenAddierer {
         int Solution[] = new int[longestZahl + 1];
 
 
-
+        int rem = 0;
 
         for (int i = 0; i < Solution.length; i++ ) {
             int num1;
             int num2;
 
+            int x;
             if (zahl1Length < 0) {
                 num1 = 0;
             } else {num1 = Character.getNumericValue(Zahl1C[zahl1Length]); }
@@ -39,11 +40,18 @@ public class SummenAddierer {
                 num2 = 0;
             } else {num2 = Character.getNumericValue(Zahl2C[zahl2Length]); }
 
-            int x = num1 + num2 ;
-            Solution[i] = x;
+            if (num1 + num2 + rem >=10) {
+                x = num1 + num2 + rem - 10;
+                rem = 1;
+                Solution[i] = x;
+            } else {
+                x = num2 + num1 +rem;
+                rem = 0;
+                Solution[i] = x;
+            }
+
             zahl1Length--;
             zahl2Length--;
-
 
 
         }
