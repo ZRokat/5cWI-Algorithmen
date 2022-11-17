@@ -34,9 +34,6 @@ public class LinkedList implements HTLlist {
         if (index == 0){
             return;
         }
-        for (int i = 0; i<index-1; i++){
-            actual = actual.getNext();
-        }
-        actual.setNext(actual.getNext().getNext());
+
     }
 }
