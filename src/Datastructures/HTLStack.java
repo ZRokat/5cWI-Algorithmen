@@ -1,7 +1,9 @@
 package Datastructures;
 
-public interface Stack {
+public interface HTLStack {
     public void push(int value);
-    public void pop(int index);
-    public void peak(int index);
+
+    void pop();
+
+    public int peek();
 }

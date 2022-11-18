@@ -1,6 +1,6 @@
-package Liste.linkedList;
+package Datastructures.linkedList;
 
-import Liste.HTLlist;
+import Datastructures.HTLlist;
 
 public class LinkedList implements HTLlist {
     private Node root;

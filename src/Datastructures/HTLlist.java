@@ -1,4 +1,4 @@
-package Liste;
+package Datastructures;
 
 public interface HTLlist {
     public void add(int value);
