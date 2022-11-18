@@ -4,15 +4,15 @@ import Datastructures.HTLQueue;
 
 public class Queue implements HTLQueue {
 
-private Element Next;
+private Element topElement;
 
 
     @Override
     public void enqueue(int value) {
         Element l = new Element(value);
-        Element n = Next;
-        if ( Next == null){
-            Next = l;
+        Element n = topElement;
+        if ( topElement == null){
+            topElement = l;
         } else {
         while (n.getNext()!=null){
             n = n.getNext();
@@ -26,7 +26,7 @@ private Element Next;
 
     @Override
     public void dequeue() {
-        Next = Next.getNext();
+        topElement = topElement.getNext();
     }
 
 
