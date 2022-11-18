@@ -8,5 +8,6 @@ public class Main {
         q.enqueue(3);
         q.dequeue();
         q.dequeue();
+        q.enqueue(10);
     }
 }
