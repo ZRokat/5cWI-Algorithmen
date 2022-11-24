@@ -13,14 +13,14 @@ private Element topElement;
         Element n = topElement;
         if ( topElement == null){
             topElement = l;
-        } else {
+        }
         while (n.getNext()!=null){
             n = n.getNext();
         }
         n.setNext(l);
         }
 
-        }
+
 
 
 
